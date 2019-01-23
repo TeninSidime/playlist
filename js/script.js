@@ -1,15 +1,34 @@
 /* global $ */
 
 // BELOW Update the songs array with four of your favorites songs.
-var songs = [];
+var songs = ["Secret","Breakdown","No strings","Swerin"];
 // BELOW Add 4 More arrays to store images_links, artists, song lengths, and links for each song
 // Make sure they match the same order as your array above
+var images_links = ["https://i.ytimg.com/vi/zg4e3GZeJSw/maxresdefault.jpg","https://i.ytimg.com/vi/aoUgBCjXBs8/maxresdefault.jpg","https://t2.genius.com/unsafe/220x220/https%3A%2F%2Fimages.genius.com%2Ff1239274c9118233ed6de5c68b806942.960x960x1.jpg","https://i.ytimg.com/vi/c_y6CTVqXkY/maxresdefault.jpg"];
+var artists = ["Ann Marie ft YK Osiris","Armon and Trey ","Armon and Trey ft. Queen","A Boogie Wit Da Hoodie "];
+var song lengths= ["3:08","3:32","3:34","3:09"];
+var links  = ["https://www.youtube.com/watch?v=qYY2-hisuXQ","https://www.youtube.com/watch?v=pQIOpuMyZ4I","No strings","Swerin"];
 
 
 
-function displaySongInfo(){
+function displaySongInfo {
     // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
-
+    
+    songs.forEach(function(title){
+        $("#songs").append("<h>" + title  + "</h>");
+    }
+     artists.forEach(function(artist){ 
+      $("#artists").append("<h>" + artist + "</h>");
+    }
+     lengths.forEach(function(lenght){
+      $("#lengths").append("<h>" + lenght + "</h>");
+    }
+    images.forEach(function(image){
+      $("#images").append( "img src =" + images_links + ">");
+    }
+    links.forEeah(function(link){
+      $("#links").append("<a href= links>" Songs links "</a>");
+    }
 }
 
 function emptySongInfo(){
